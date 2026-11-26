@@ -23,4 +23,6 @@ test ('Launch Google URL', async({page}) => {
   await page.goto("https://www.google.com");
 
   await expect(page.getByRole('combobox', { name: 'Search' })).toBeVisible();
+
+  await expect(page.getByRole('combobox', { name: 'Search' })).toBeVisible();
 });
